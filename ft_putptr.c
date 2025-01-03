@@ -18,7 +18,7 @@ int	ft_putptr(void *ptr)
 	int				count;
 
 	count = 0;
-	if(ptr == NULL)
+	if (ptr == NULL)
 	{
 		write(1, "(nil)", 5);
 		return (5);
