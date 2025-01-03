@@ -15,7 +15,7 @@
 int	ft_putptr(void *ptr)
 {
 	unsigned long	s;
-	int	count;
+	int				count;
 
 	count = 0;
 	s = (unsigned long)ptr;

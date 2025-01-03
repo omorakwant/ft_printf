@@ -14,11 +14,11 @@
 # define PRINTF_H
 
 # include <stdarg.h>
-# include <unistd.h>
-# include <stdlib.h>
 # include <stdio.h>
+# include <stdlib.h>
+# include <unistd.h>
 
-int ft_putchar(int c);
+int	ft_putchar(int c);
 int	ft_putstr(char *s);
 int	ft_putnbr(long n);
 int	ft_puthexa(unsigned long n, char c);

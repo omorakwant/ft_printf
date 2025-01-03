@@ -6,7 +6,7 @@
 /*   By: odahriz <odahriz@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 09:45:03 by odahriz           #+#    #+#             */
-/*   Updated: 2025/01/01 15:32:08 by odahriz          ###   ########.fr       */
+/*   Updated: 2025/01/03 15:02:07 by odahriz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	format_check(char c, va_list args)
 
 int	ft_printf(const char *format, ...)
 {
-	va_list args;
+	va_list	args;
 	int		i;
 	int		count;
 
@@ -62,9 +62,4 @@ int	ft_printf(const char *format, ...)
 	}
 	va_end(args);
 	return (count);
-}
-int main()
-{
-	ft_printf("%%%%%%\n", "bla");
-	printf("%%%%%%%");
 }

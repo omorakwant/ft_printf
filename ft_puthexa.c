@@ -14,8 +14,8 @@
 
 int	ft_puthexa(unsigned long n, char c)
 {
-	char *s;
-	int	count;
+	char	*s;
+	int		count;
 
 	count = 0;
 	s = "0123456789abcdef";
