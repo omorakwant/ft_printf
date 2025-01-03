@@ -1,2 +1,25 @@
-SRC: ft_printf.c ft_putchar.c ft_puthexa.c ft_putnbr.c ft_putptr.c ft_putstr.c printf.h
-OBJ : ft_printf.o ft_putchar.o ft_puthexa.o ft_putnbr.o ft_putptr.o ft_putstr.o
+CC = cc
+FLAGS = -Wall -Wextra -Werror
+NAME = libftprintf.a
+SRCS = ft_putchar.c ft_putstr.c ft_putnbr.c ft_printf.c\
+		ft_puthexa.c ft_putptr.c
+
+OFILES = $(SRCS:.c=.o)
+
+$(NAME) : $(OFILES)
+
+all : $(NAME)
+
+%.o: %.c
+	$(CC) -c $(FLAGS) $< -o $@
+	ar rcs $(NAME) $@
+
+clean:
+	rm -rf  $(OFILES)
+
+fclean:	clean
+	rm -rf $(NAME)
+
+re:	fclean all
+
+.PHONY:	all clean

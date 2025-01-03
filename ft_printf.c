@@ -6,11 +6,11 @@
 /*   By: odahriz <odahriz@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 09:45:03 by odahriz           #+#    #+#             */
-/*   Updated: 2025/01/03 15:02:07 by odahriz          ###   ########.fr       */
+/*   Updated: 2025/01/03 16:00:25 by odahriz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	format_check(char c, va_list args)
 {
@@ -28,7 +28,7 @@ int	format_check(char c, va_list args)
 	else if (c == 'p')
 		count += ft_putptr(va_arg(args, void *));
 	else if (c == 'u')
-		count += ft_putnbr(va_arg(args, unsigned long));
+		count += ft_putnbr(va_arg(args, unsigned int));
 	else
 	{
 		count += ft_putchar('%');

@@ -6,11 +6,11 @@
 /*   By: odahriz <odahriz@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/01 10:22:57 by odahriz           #+#    #+#             */
-/*   Updated: 2025/01/01 13:02:44 by odahriz          ###   ########.fr       */
+/*   Updated: 2025/01/03 15:55:08 by odahriz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr(long n)
 {

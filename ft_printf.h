@@ -1,23 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                           :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: odahriz <odahriz@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 10:21:20 by odahriz           #+#    #+#             */
-/*   Updated: 2025/01/01 13:07:12 by odahriz          ###   ########.fr       */
+/*   Updated: 2025/01/03 15:57:55 by odahriz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stdarg.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
 
+int	ft_printf(const char *format, ...);
 int	ft_putchar(int c);
 int	ft_putstr(char *s);
 int	ft_putnbr(long n);
