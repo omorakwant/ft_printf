@@ -6,7 +6,7 @@
 /*   By: odahriz <odahriz@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 09:45:03 by odahriz           #+#    #+#             */
-/*   Updated: 2025/01/03 20:08:02 by odahriz          ###   ########.fr       */
+/*   Updated: 2025/01/06 15:40:21 by odahriz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ int	ft_printf(const char *format, ...)
 	int		i;
 	int		count;
 
+	if (format == NULL)
+		return (-1);
 	i = 0;
 	count = 0;
 	va_start(args, format);
